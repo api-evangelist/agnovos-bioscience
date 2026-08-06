@@ -42,5 +42,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AgNovos Bioscience is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/agnovos-bioscience_stock/
+AgNovos Bioscience is a privately held medical technology company developing novel treatments for
+bone disease, founded in 2012 with offices in New York, Rockville (Maryland), Frankfurt and Dallas.
+Its lead technology is AGN1, a proprietary triphasic, calcium-based, osteoconductive implant material
+delivered through the OSSURE Local Osteo-Enhancement Procedure (LOEP) — a minimally invasive procedure
+intended to increase the density and strength of osteoporotic bone at sites of highest fracture risk.
+The company runs an active clinical program (CONFIRM, RECONFIRM, RESTORE and GRACE trials).
+
+## API surface
+
+**None.** AgNovos Bioscience ships a physical implant and surgical kit, not software. Contract
+discovery on 2026-08-06 found no public API, developer program, SDK, or machine-readable interface:
+the company's own 432-URL sitemap covers only corporate, clinical and careers pages; `api.`,
+`developers.`, `docs.` subdomains do not resolve; `/openapi.json`, `/llms.txt`, `/.well-known/*`
+all return a genuine 404; and there is no `agnovos` GitHub organization or package on npm, PyPI or
+RubyGems. `ossure.com` is a parked lander that answers HTTP 200 with HTML for every path — a false
+positive, not an API. See `x-coverage` in `apis.yml`.
+
+- https://www.agnovos.com/
+- https://forgeglobal.com/agnovos-bioscience_stock/ (secondary-market listing — the harvest source)

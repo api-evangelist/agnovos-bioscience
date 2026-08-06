@@ -1,8 +1,18 @@
 aid: agnovos-bioscience
 name: AgNovos Bioscience
-description: 'AgNovos Bioscience is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'AgNovos Bioscience is a privately held medical technology company developing
+  novel treatments for bone disease, founded in 2012 with offices in New York, Rockville
+  (Maryland), Frankfurt and Dallas. Its lead technology is AGN1, a proprietary triphasic,
+  calcium-based, osteoconductive implant material delivered through the OSSURE Local
+  Osteo-Enhancement Procedure (LOEP) — a minimally invasive procedure intended to
+  immediately, substantially and durably increase the density and strength of osteoporotic
+  bone at sites of highest fracture risk. The company runs an active clinical program
+  (CONFIRM, RECONFIRM, RESTORE and GRACE trials) and sponsors the ESCEO-AgNovos Young
+  Investigator Award. AgNovos ships a physical implant and surgical kit, not software:
+  its public web presence is a corporate and clinical-communications site with no
+  developer program, no public API, and no machine-readable interface of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/agnovos-bioscience/refs/heads/main/apis.yml
+image: https://www.agnovos.com/icons/icon-512x512.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +22,15 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Medical Devices
+- Health Care
+- Life Sciences
+- Biotechnology
+- Orthopedics
+- Bone Health
+- Osteoporosis
+- Regenerative Medicine
+- Clinical Research
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,56 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/agnovos-bioscience-domain-security.yml
 - type: Website
+  url: https://www.agnovos.com/
+- type: About
+  url: https://www.agnovos.com/en/about-us/about-agnovos/
+- type: Blog
+  url: https://www.agnovos.com/en/news-events/
+- type: Support
+  url: https://www.agnovos.com/en/contact/
+- type: FAQ
+  url: https://www.agnovos.com/en/faqs/
+- type: PrivacyPolicy
+  url: https://www.agnovos.com/en/privacy-policy/
+- type: TermsOfService
+  url: https://www.agnovos.com/en/terms-of-use/
+- type: CodeOfConduct
+  url: https://www.agnovos.com/en/commitment-to-ethics/
+- type: Careers
+  url: https://www.agnovos.com/en/careers/
+- type: SecondaryMarket
   url: https://forgeglobal.com/agnovos-bioscience_stock/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/agnovos-bioscience
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    AgNovos Bioscience sells a physical implant and surgical kit (AGN1 / OSSURE LOEP),
+    not software — its 432-URL Gatsby marketing site has no products, developer, docs
+    or integration path in its own sitemap, api./developers./docs.agnovos.com do not
+    resolve at all, and there is no agnovos GitHub organization or package on any registry.
+  evidence:
+  - url: https://www.agnovos.com/sitemap-0.xml
+    status: 200
+  - url: https://www.agnovos.com/openapi.json
+    status: 404
+  - url: https://www.agnovos.com/llms.txt
+    status: 404
+  - url: https://www.agnovos.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.agnovos.com/.well-known/security.txt
+    status: 404
+  - url: https://api.agnovos.com/
+    status: 0
+  - url: https://api.github.com/orgs/agnovos
+    status: 404
+  checked: '2026-08-06'
