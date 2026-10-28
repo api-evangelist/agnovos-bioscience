@@ -64,22 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AgNovos Bioscience is a privately held medical technology company developing novel treatments for
-bone disease, founded in 2012 with offices in New York, Rockville (Maryland), Frankfurt and Dallas.
-Its lead technology is AGN1, a proprietary triphasic, calcium-based, osteoconductive implant material
-delivered through the OSSURE Local Osteo-Enhancement Procedure (LOEP) — a minimally invasive procedure
-intended to increase the density and strength of osteoporotic bone at sites of highest fracture risk.
-The company runs an active clinical program (CONFIRM, RECONFIRM, RESTORE and GRACE trials).
+AgNovos Bioscience is a privately held medical technology company developing novel treatments for bone disease, founded in 2012 with offices in New York, Rockville (Maryland), Frankfurt and Dallas. Its lead technology is AGN1, a proprietary triphasic, calcium-based, osteoconductive implant material delivered through the OSSURE Local Osteo-Enhancement Procedure (LOEP) — a minimally invasive procedure intended to immediately, substantially and durably increase the density and strength of osteoporotic bone at sites of highest fracture risk. The company runs an active clinical program (CONFIRM, RECONFIRM, RESTORE and GRACE trials) and sponsors the ESCEO-AgNovos Young Investigator Award. AgNovos ships a physical implant and surgical kit, not software: its public web presence is a corporate and clinical-communications site with no developer program, no public API, and no machine-readable interface of any kind.
 
-## API surface
+**Areas:** Company · Medical Devices · Healthcare · Life Sciences · Biotechnology · Orthopedics · Bone Health · Osteoporosis · Regenerative Medicine · Clinical Research
 
-**None.** AgNovos Bioscience ships a physical implant and surgical kit, not software. Contract
-discovery on 2026-08-06 found no public API, developer program, SDK, or machine-readable interface:
-the company's own 432-URL sitemap covers only corporate, clinical and careers pages; `api.`,
-`developers.`, `docs.` subdomains do not resolve; `/openapi.json`, `/llms.txt`, `/.well-known/*`
-all return a genuine 404; and there is no `agnovos` GitHub organization or package on npm, PyPI or
-RubyGems. `ossure.com` is a parked lander that answers HTTP 200 with HTML for every path — a false
-positive, not an API. See `x-coverage` in `apis.yml`.
+## AgNovos Bioscience on APIs.io
 
-- https://www.agnovos.com/
-- https://forgeglobal.com/agnovos-bioscience_stock/ (secondary-market listing — the harvest source)
+Everything profiled for AgNovos Bioscience is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/agnovos-bioscience/](https://apis.io/providers/agnovos-bioscience/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Agnovos Bioscience Domain Security](https://apis.io/security/agnovos-bioscience/agnovos-bioscience-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.agnovos.com/)
+- [Support](https://www.agnovos.com/en/contact/)
+- [Blog](https://www.agnovos.com/en/news-events/)
+- [Terms of service](https://www.agnovos.com/en/terms-of-use/)
+- [Privacy policy](https://www.agnovos.com/en/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 10.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/agnovos-bioscience/](https://apis.io/providers/agnovos-bioscience/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AgNovos Bioscience: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/agnovos-bioscience/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
